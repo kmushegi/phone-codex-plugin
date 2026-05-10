@@ -1,0 +1,49 @@
+{
+  "name": "phone",
+  "version": "0.1.0",
+  "description": "Connects Codex to a hosted phone agent after dashboard-based setup.",
+  "author": {
+    "name": "Kote",
+    "url": "https://github.com/kote"
+  },
+  "homepage": "https://phone.kote.fyi",
+  "repository": "https://github.com/kmushegi/phone-codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "phone",
+    "calls",
+    "mcp",
+    "calendar",
+    "scheduling"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "phone",
+    "shortDescription": "Give Codex a phone line for approved calls.",
+    "longDescription": "phone connects Codex to a hosted MCP phone agent after the user signs in at phone.kote.fyi, sets their caller name, completes billing or number setup when prompted, and mints a scoped API key. The bundled skills guide setup, verify calendar access when scheduling is involved, check service readiness, manage contacts, and require explicit user approval before calls are attempted.",
+    "developerName": "Kote",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write",
+      "MCP",
+      "Calendar"
+    ],
+    "websiteURL": "https://phone.kote.fyi",
+    "privacyPolicyURL": "https://github.com/kmushegi/phone-codex-plugin/blob/main/plugins/phone/legal/privacy-policy.md",
+    "termsOfServiceURL": "https://github.com/kmushegi/phone-codex-plugin/blob/main/plugins/phone/legal/terms-of-service.md",
+    "defaultPrompt": [
+      "Set up phone for my Codex.",
+      "Call an approved contact to book an appointment.",
+      "Check my calendar before placing a task call.",
+      "Show recent phone-agent call results."
+    ],
+    "brandColor": "#075E63",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

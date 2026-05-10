@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="Phone Agent logo">
+  <rect width="640" height="240" rx="32" fill="#F8FAFC"/>
+  <rect x="40" y="40" width="160" height="160" rx="36" fill="#2563EB"/>
+  <path fill="#FFFFFF" d="M142.3 134.8c-6.2 0-12.1-1-17.6-2.8a9.6 9.6 0 0 0-9.5 2.2l-9 6.9a74.3 74.3 0 0 1-33.7-33.6l6.8-9.1a9.6 9.6 0 0 0 2.3-9.5 56.1 56.1 0 0 1-2.8-17.6 9.6 9.6 0 0 0-9.6-9.6H51.4a9.6 9.6 0 0 0-9.6 9.6c0 55.8 45.2 101 101 101a9.6 9.6 0 0 0 9.6-9.6v-17.8a9.6 9.6 0 0 0-10.1-10.1Z" transform="translate(40 40)"/>
+  <path fill="#DBEAFE" d="M127 31c19 0 34 15 34 34h-14c0-11.3-8.7-20-20-20V31Zm0 25c5 0 9 4 9 9h-14a5 5 0 0 1 5-5v-4Z" transform="translate(40 40)"/>
+  <text x="232" y="111" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700">Phone Agent</text>
+  <text x="234" y="154" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Approved outbound calls for Codex</text>
+</svg>
