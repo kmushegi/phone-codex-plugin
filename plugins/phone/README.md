@@ -16,9 +16,9 @@ New users should start at:
 https://phone.kote.fyi
 ```
 
-The dashboard is the source of truth for sign-in, invite codes, caller display name, billing or number setup when enabled, and API-key minting. Each installer must provide the resulting scoped `PHONE_AGENT_API_KEY` in their local environment; Codex should never ask the user to paste the raw key into chat.
+The dashboard is the source of truth for sign-in, invite codes, caller display name, billing or number setup when enabled, and API-key minting. Each installer must provide the resulting scoped `PHONE_AGENT_API_KEY` in the environment Codex can read; Codex should never ask the user to paste the raw key into chat.
 
-For local setup on macOS/zsh:
+If Codex needs a local environment variable, set:
 
 ```bash
 export PHONE_AGENT_API_KEY=<api-key-from-phone-dashboard>
@@ -28,7 +28,7 @@ Then restart Codex or reload the plugin so the hosted MCP can read the environme
 
 ## Local Marketplace Testing
 
-This repo includes `.agents/plugins/marketplace.json`, which points Codex at `plugins/phone` for local installation testing. Restart Codex after changing plugin files, then install Phone Agent from the repo marketplace.
+This repo includes `.agents/plugins/marketplace.json`, which points Codex at `plugins/phone` for local testing. Restart Codex after changing plugin files, then enable Phone Agent from the repo marketplace in the Codex app.
 
 ## Public Marketplace Install
 
@@ -38,12 +38,13 @@ The public plugin package is distributed from:
 https://github.com/kmushegi/phone-codex-plugin
 ```
 
-Install from Codex with:
+Add the marketplace from Codex with:
 
 ```bash
 codex plugin marketplace add kmushegi/phone-codex-plugin
-codex plugin install phone@phone-codex-plugin
 ```
+
+Then open Codex and enable the `phone` plugin from the app plugin UI.
 
 ## Setup Expectations
 

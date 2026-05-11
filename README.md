@@ -8,16 +8,17 @@ This repository is the public Codex plugin marketplace for `phone`.
 
 ```bash
 codex plugin marketplace add kmushegi/phone-codex-plugin
-codex plugin install phone@phone-codex-plugin
 ```
 
-Then set the API key minted at [phone.kote.fyi](https://phone.kote.fyi):
+Then open Codex and enable the `phone` plugin from the app plugin UI.
+
+When prompted, use the API key minted at [phone.kote.fyi](https://phone.kote.fyi). If Codex needs a local environment variable, set:
 
 ```bash
 export PHONE_AGENT_API_KEY=<api-key-from-phone-dashboard>
 ```
 
-Restart Codex or reload plugins after setting the environment variable.
+Restart Codex or reload plugins if Codex cannot see the environment variable.
 
 ## What is included
 

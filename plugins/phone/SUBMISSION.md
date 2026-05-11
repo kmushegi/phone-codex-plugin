@@ -11,7 +11,7 @@ This plugin is packaged for local Codex testing under `plugins/phone`. Friend/be
 - Local marketplace: `.agents/plugins/marketplace.json`
 - Legal drafts: `plugins/phone/legal/privacy-policy.md` and `plugins/phone/legal/terms-of-service.md`
 
-Restart Codex after marketplace changes, then install Phone Agent from the repo marketplace.
+Restart Codex after marketplace changes, then enable Phone Agent from the repo marketplace in the Codex app.
 
 ## OpenAI Dashboard Prerequisites
 
@@ -62,10 +62,4 @@ Run:
 npm test
 ```
 
-Optional live Realtime behavior check without Twilio:
-
-```bash
-npm run eval:realtime
-```
-
-Then exercise the hosted MCP endpoint from a clean environment with only `PHONE_AGENT_API_KEY` configured. Confirm `tools/list` includes annotations for every tool and that the demo account can complete the review test prompts.
+Then exercise the hosted MCP endpoint from a clean environment with only `PHONE_AGENT_API_KEY` configured. Confirm `tools/list` includes annotations for every tool and that the demo account can complete the review test prompts. Live Realtime evals live in the private backend repo, not this plugin distribution repo.

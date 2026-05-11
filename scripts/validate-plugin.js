@@ -43,6 +43,15 @@ const mcpConfig = readJson("plugins/phone/.mcp.json");
 assert(mcpConfig.mcpServers?.phone?.url === "https://phone.kote.fyi/mcp", "MCP server must point at hosted phone");
 assert(mcpConfig.mcpServers?.phone?.bearer_token_env_var === "PHONE_AGENT_API_KEY", "MCP auth must use PHONE_AGENT_API_KEY");
 
+const rootReadme = fs.readFileSync(path.join(repoRoot, "README.md"), "utf8");
+const pluginReadme = fs.readFileSync(path.join(pluginRoot, "README.md"), "utf8");
+const setupSkill = fs.readFileSync(path.join(pluginRoot, "skills", "phone-setup", "SKILL.md"), "utf8");
+const docs = `${rootReadme}\n${pluginReadme}\n${setupSkill}`;
+assert(docs.includes("codex plugin marketplace add kmushegi/phone-codex-plugin"), "docs must include marketplace add command");
+assert(/enable .*phone.*Codex app/i.test(docs), "docs must tell users to enable phone in the Codex app");
+assert(!docs.includes("codex plugin install"), "docs must not reference unsupported plugin install command");
+assert(/do not ask (them|the user) to (reveal|paste)/i.test(setupSkill), "setup skill must not ask users to reveal API keys");
+
 console.log("phone Codex plugin package is valid");
 
 function readJson(relativePath) {
