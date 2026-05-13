@@ -18,7 +18,7 @@ assert(plugin.policy?.authentication === "ON_INSTALL", "phone plugin auth must r
 const manifest = readJson("plugins/phone/.codex-plugin/plugin.json");
 assert(manifest.name === "phone", "plugin name must be phone");
 assert(manifest.license === "MIT", "plugin license must be MIT");
-assert(manifest.homepage === "https://phone.kote.fyi", "homepage must point at the beta dashboard");
+assert(manifest.homepage === "https://phoneforagents.com", "homepage must point at the beta dashboard");
 assert(manifest.repository === "https://github.com/kmushegi/phone-codex-plugin", "repository must point at this public repo");
 
 for (const relativePath of [
@@ -40,7 +40,7 @@ for (const relativePath of [
 }
 
 const mcpConfig = readJson("plugins/phone/.mcp.json");
-assert(mcpConfig.mcpServers?.phone?.url === "https://phone.kote.fyi/mcp", "MCP server must point at hosted phone");
+assert(mcpConfig.mcpServers?.phone?.url === "https://phoneforagents.com/mcp", "MCP server must point at hosted phone");
 assert(mcpConfig.mcpServers?.phone?.bearer_token_env_var === "PHONE_AGENT_API_KEY", "MCP auth must use PHONE_AGENT_API_KEY");
 
 const rootReadme = fs.readFileSync(path.join(repoRoot, "README.md"), "utf8");

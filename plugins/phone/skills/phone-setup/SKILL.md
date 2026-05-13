@@ -12,7 +12,7 @@ Use this skill when a user asks to install, configure, onboard, repair, or get s
 Guide the user through setup without asking them to paste secrets into chat:
 
 1. If the plugin is not enabled yet, have them run `codex plugin marketplace add kmushegi/phone-codex-plugin`, then enable `phone` from the Codex app plugin UI.
-2. Send the user to `https://phone.kote.fyi`.
+2. Send the user to `https://phoneforagents.com`.
 3. Tell them to sign in with the email they want tied to their phone account.
 4. If prompted, have them enter their invite code.
 5. Have them set the name the assistant should use on calls.
@@ -34,8 +34,8 @@ For persistence, suggest their normal local environment manager, shell profile, 
 If MCP tools fail with missing or invalid authentication:
 
 - Do not ask the user to paste the raw API key into chat.
-- Ask them to revisit `https://phone.kote.fyi`, mint or revoke and re-mint a scoped API key, update `PHONE_AGENT_API_KEY`, and restart Codex.
-- If the dashboard works but MCP still fails, verify the MCP URL is `https://phone.kote.fyi/mcp`.
+- Ask them to revisit `https://phoneforagents.com`, mint or revoke and re-mint a scoped API key, update `PHONE_AGENT_API_KEY`, and restart Codex.
+- If the dashboard works but MCP still fails, verify the MCP URL is `https://phoneforagents.com/mcp`.
 - If the marketplace is missing, have them run `codex plugin marketplace add kmushegi/phone-codex-plugin` and enable `phone` in the Codex app.
 
 If MCP tools connect but the user has no contacts:
@@ -47,7 +47,7 @@ If MCP tools connect but the user has no contacts:
 
 Setup is complete when:
 
-- The user has signed in at `https://phone.kote.fyi`.
+- The user has signed in at `https://phoneforagents.com`.
 - The user has a caller display name in the hosted profile.
 - Billing or number setup is complete if the dashboard requires it.
 - `PHONE_AGENT_API_KEY` is configured outside chat.

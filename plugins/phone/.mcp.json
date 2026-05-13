@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "phone": {
-      "url": "https://phone.kote.fyi/mcp",
+      "url": "https://phoneforagents.com/mcp",
       "bearer_token_env_var": "PHONE_AGENT_API_KEY"
     }
   }

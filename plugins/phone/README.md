@@ -1,4 +1,4 @@
-# Phone Agent Plugin
+# phone Plugin
 
 Phone Agent connects Codex directly to the hosted `local-phone-agent` remote MCP endpoint after the user finishes setup on the phone dashboard.
 
@@ -7,13 +7,13 @@ Phone Agent connects Codex directly to the hosted `local-phone-agent` remote MCP
 The plugin defaults to:
 
 ```text
-https://phone.kote.fyi/mcp
+https://phoneforagents.com/mcp
 ```
 
 New users should start at:
 
 ```text
-https://phone.kote.fyi
+https://phoneforagents.com
 ```
 
 The dashboard is the source of truth for sign-in, invite codes, caller display name, billing or number setup when enabled, and API-key minting. Each installer must provide the resulting scoped `PHONE_AGENT_API_KEY` in the environment Codex can read; Codex should never ask the user to paste the raw key into chat.
@@ -51,10 +51,10 @@ Then open Codex and enable the `phone` plugin from the app plugin UI.
 Before placing real calls, the Phone Agent skill should verify:
 
 - the user's name for outbound call introductions
-- the dashboard account is set up at `https://phone.kote.fyi`
+- the dashboard account is set up at `https://phoneforagents.com`
 - Google Calendar access for scheduling calls
 - a configured `PHONE_AGENT_API_KEY`
-- the intended remote MCP URL, `https://phone.kote.fyi/mcp`
+- the intended remote MCP URL, `https://phoneforagents.com/mcp`
 - outbound contacts and allowlist entries
 - explicit user approval for the specific call
 

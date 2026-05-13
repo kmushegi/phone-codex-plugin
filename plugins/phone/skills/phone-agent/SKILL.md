@@ -15,9 +15,9 @@ Before the first real call in a Codex session:
 2. Confirm the user-facing name the assistant should use for the caller. Prefer the hosted dashboard profile when available.
 3. Confirm Google Calendar access is available when the call involves scheduling, booking, rescheduling, or availability.
 4. Confirm `PHONE_AGENT_API_KEY` is configured for this Codex instance. Do not ask the user to paste keys into chat.
-5. Confirm the MCP server is configured with the intended remote URL. The plugin default is `https://phone.kote.fyi/mcp`.
+5. Confirm the MCP server is configured with the intended remote URL. The plugin default is `https://phoneforagents.com/mcp`.
 6. Run `list_outbound_contacts` before placing calls. Prefer configured aliases; raw E.164 numbers are allowed only when the user explicitly supplies the number for this call.
-7. Confirm the hosted phone service is reachable. If tools return an auth error, direct the user to `https://phone.kote.fyi` to mint or repair their scoped API key and then restart Codex. If tools return a connection error, ask the user to verify the hosted deployment.
+7. Confirm the hosted phone service is reachable. If tools return an auth error, direct the user to `https://phoneforagents.com` to mint or repair their scoped API key and then restart Codex. If tools return a connection error, ask the user to verify the hosted deployment.
 8. Gather only the details needed for the call. Treat medical, legal, financial, account, and identity details as sensitive and include them only when the user explicitly approves saying them.
 
 ## Call Safety

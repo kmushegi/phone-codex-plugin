@@ -12,7 +12,7 @@ codex plugin marketplace add kmushegi/phone-codex-plugin
 
 Then open Codex and enable the `phone` plugin from the app plugin UI.
 
-When prompted, use the API key minted at [phone.kote.fyi](https://phone.kote.fyi). If Codex needs a local environment variable, set:
+When prompted, use the API key minted at [phoneforagents.com](https://phoneforagents.com). If Codex needs a local environment variable, set:
 
 ```bash
 export PHONE_AGENT_API_KEY=<api-key-from-phone-dashboard>
@@ -24,7 +24,7 @@ Restart Codex or reload plugins if Codex cannot see the environment variable.
 
 - `.agents/plugins/marketplace.json`
 - `plugins/phone/.codex-plugin/plugin.json`
-- hosted MCP config for `https://phone.kote.fyi/mcp`
+- hosted MCP config for `https://phoneforagents.com/mcp`
 - setup and calling skills
 - draft privacy and terms documents
 

@@ -18,7 +18,7 @@ Restart Codex after marketplace changes, then enable Phone Agent from the repo m
 - Complete individual or business verification for the publisher name.
 - Use a project with global data residency.
 - Ensure the submitting user has `api.apps.write`; `api.apps.read` is needed to view drafts and status.
-- Host the MCP server at a public production URL. The current plugin points to `https://phone.kote.fyi/mcp`.
+- Host the MCP server at a public production URL. The current plugin points to `https://phoneforagents.com/mcp`.
 - Provide review credentials for a demo account without MFA or additional out-of-band verification.
 - Define the app CSP for the exact domains the app fetches from.
 - Publish final privacy policy and terms URLs before submission.
